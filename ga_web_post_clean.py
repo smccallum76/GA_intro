@@ -13,7 +13,7 @@ import ga_web_post_functions_clean as gwp
 ''' ---------------------------------------------------------------- '''
 ''' LINEAR REGRESSION MODEL '''
 ''' ---------------------------------------------------------------- '''
-data = pd.read_csv('input\\stattler_rhob_toc.csv')
+data = pd.read_csv('user_input_file_with_rhob_and_toc_data')
 
 slope, intercept, r_value, p_value, std_err = stats.linregress(data.RHOB, data.TOC)
 
